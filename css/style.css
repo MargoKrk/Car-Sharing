@@ -47,6 +47,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     font-size: 90px;
+    line-height: 90px;
     font-weight: 900;
     text-shadow: 0 3px 6px #00000040;
     z-index: 1;
@@ -58,11 +59,12 @@ body {
     margin-top: 10px;
     margin-bottom: 54px;
     font-size: 16px;
+    line-height: 22px;
     font-weight: 700;
     z-index: 1;
 }
 
-/* BUTTONY*/
+/* BUTTONS START */
 .banner-buttons {
     z-index: 1;
     display: flex;
@@ -71,6 +73,7 @@ body {
 
 .button {
     font-size: 16px;
+    line-height: 22px;
     font-weight: 700;
     text-transform: uppercase;
     display: inline-block;
@@ -113,7 +116,7 @@ body {
     border: none;
 }
 
-/* BUTTONY*/
+/* BUTTONS END*/
 
 /* HEADER */
 
@@ -159,6 +162,9 @@ header .container {
     color: var(--first-color);
     z-index: 1;
 }
+.lista {
+    z-index: 1;
+}
 
 .lista ul {
     height: 100%;
@@ -166,23 +172,23 @@ header .container {
     justify-content: right;
 }
 
-a {
+.header-link {
     text-decoration: none;
     color: var(--first-color);
     font-size: 16px;
+    line-height: 22px;
     font-weight: 700;
     text-transform: uppercase;
+    padding: 34px;
 }
 
-li{
-    text-decoration: none;
-    padding: 33px;
-    z-index: 1;
+.header-link li {
 }
 
-li:hover {
+.header-link:hover {
     background-color: rgba(255,255,255,0.2);
     cursor: pointer;
+    height: 100%;
 }
 
 /* BLOG*/
@@ -226,11 +232,6 @@ li:hover {
     line-height: 19px;
     padding: 11px 29px;
 }
-
-.blog .section-title {
-
-}
-
 
 .section-title {
     font-size: 35px;
@@ -356,7 +357,7 @@ li:hover {
     text-align: left;
     font-size: 16px;
     line-height: 22px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     color: #B2B2B2;
     padding: 8px 12px;
     margin-bottom: 20px;
@@ -373,7 +374,7 @@ li:hover {
 
 .contact-form-input:focus {
     border: 1px solid var(--secondary-color);
-    box-shadow: 0px 1px 6px #FF00004D;
+    box-shadow: 0 1px 6px #FF00004D;
 }
 
 /* CHECKBOX */
@@ -411,3 +412,68 @@ li:hover {
     color: #B2B2B2;
     margin-left: 30px;
 }
+
+.contact-form-button {
+    font-size: 14px;
+    line-height: 19px;
+    padding: 11px 52px;
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0 3px 6px #FF00004D;
+    align-self: flex-end;
+}
+
+/* CHECKBOX END */
+
+/* FOOTER */
+
+.footer {
+    background-color: #28272C;
+    height: 232px;
+}
+
+.footer .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer .logo img {
+    width: 16px;
+    height: 19px;
+}
+
+.footer .logo {
+    font-size: 25px;
+    line-height: 34px;
+    font-weight: 800;
+    text-align: left;
+}
+
+.footer-nav {
+    display: flex;
+    margin-top: 22px;
+    margin-bottom: 39px;
+}
+
+.footer-nav-list {
+}
+
+.footer-nav-list-link {
+    text-decoration: none;
+    color: var(--first-color);
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 19px;
+    font-weight: 800;
+}
+
+.footer-nav-copy {
+    color: #D1D1D1;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 300;
+}
+
+
+
