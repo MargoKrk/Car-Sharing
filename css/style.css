@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -328,6 +329,7 @@ header .container {
     align-items: center;
     height: 489px;
     margin-top: 65px;
+    margin-bottom: 65px;
 }
 
 .contact-form-container {
@@ -335,7 +337,6 @@ header .container {
     justify-content: center;
     align-items: flex-start;
     margin-top: 35px;
-    margin-bottom: 65px;
 }
 
 .contact-form-img{
@@ -441,6 +442,8 @@ header .container {
 .footer .logo img {
     width: 16px;
     height: 19px;
+    display: flex;
+    align-self: center
 }
 
 .footer .logo {
@@ -448,10 +451,12 @@ header .container {
     line-height: 34px;
     font-weight: 800;
     text-align: left;
+    margin-top: 40px
 }
 
 .footer-nav {
     display: flex;
+    align-items: flex-end;
     margin-top: 22px;
     margin-bottom: 39px;
 }
@@ -466,6 +471,8 @@ header .container {
     font-size: 14px;
     line-height: 19px;
     font-weight: 800;
+    display: block;
+    margin-bottom: 7px;
 }
 
 .footer-nav-copy {
@@ -473,7 +480,19 @@ header .container {
     font-size: 12px;
     line-height: 16px;
     font-weight: 300;
+    display: flex;
+    margin-left: auto;
+}
+
+.footer-nav-list a:hover {
+    color: var(--secondary-color);
+}
+
+.footer-nav-list:first-of-type {
+    margin-right: 141px;
 }
 
 
-
+.footer-nav-list:last-child {
+    margin-bottom: 0;
+}
