@@ -81,6 +81,7 @@ body {
     border-radius: 40px;
     padding: 22px 55px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 .button-red {
